@@ -39,7 +39,7 @@ public class SoftAssertionsCheck {
 
         $("#wiki-pages-box").$(byText("SoftAssertions")).click();
         $(".markdown-body").shouldHave(text("3. Using JUnit5 extend test class:"));
-        String textJunit5 = """
+        String exampleJunit5 = """
                 @ExtendWith({SoftAssertsExtension.class})
                 class Tests {
                   @Test
@@ -52,7 +52,6 @@ public class SoftAssertionsCheck {
                   }
                 }
                 """;
-
     }
 }
 
